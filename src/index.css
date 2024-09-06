@@ -39,7 +39,7 @@ main {
   & > section {
     display: grid;
     grid-template: 3em calc(100% - 3em) / 100%;
-    > div:first-child {
+    & > div:first-child {
       display: flex;
       align-items: center;
       gap: 1em;
