@@ -12,7 +12,12 @@
 :root {
   font-size: 13px;
   --header-height: 3.5em;
-  --main-height: calc(100svh - var(--header-height));
+  --main-height: auto;
+  --main-template: auto / 100%;
+  @media (min-width: 768px) {
+    --main-height: calc(100svh - var(--header-height));
+    --main-template: 100% / repeat(3, minmax(0, 1fr));
+  }
 }
 
 header {
@@ -28,9 +33,9 @@ header {
 main {
   display: grid;
   padding: 1rem;
-  height: var(--main-height);
-  grid-template: 100% / repeat(3, minmax(0, 1fr));
   gap: 1rem;
+  height: var(--main-height);
+  grid-template: var(--main-template);
   & > section {
     display: grid;
     grid-template: 3em calc(100% - 3em) / 100%;
