@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+  <book>
+    <title>源氏物語</title>
+    <author>紫式部</author>
+  </book>
+  <book>
+    <title>吾輩は猫である</title>
+    <author>夏目漱石</author>
+  </book>
+  <book>
+    <title>人間失格</title>
+    <author>太宰治</author>
+  </book>
+</books>

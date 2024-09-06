@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:where(h1, h2) {
+  font-size: 100%;
+}
+
+:root {
+  font-size: 13px;
+  --header-height: 3.5em;
+  --main-height: calc(100svh - var(--header-height));
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  height: var(--header-height);
+  background-color: #333;
+  color: white;
+}
+
+main {
+  display: grid;
+  padding: 1rem;
+  height: var(--main-height);
+  grid-template: 100% / repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  & > section {
+    display: grid;
+    grid-template: 3em calc(100% - 3em) / 100%;
+    > div:first-child {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+    }
+  }
+}
+
+iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #333;
+}
