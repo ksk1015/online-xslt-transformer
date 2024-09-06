@@ -27,6 +27,12 @@ function App() {
     <>
       <header>
         <h1>Online XSLT Transformer</h1>
+        <a
+          href="https://github.com/ksk1015/online-xslt-transformer/"
+          title="GitHub"
+        >
+          🐱🐙
+        </a>
       </header>
       <main>
         <section>
