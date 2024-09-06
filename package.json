@@ -9,8 +9,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build -- --outDir=docs",
+    "deploy": "gh-pages -d docs"
   },
   "dependencies": {
     "@codemirror/lang-html": "^6.4.9",
