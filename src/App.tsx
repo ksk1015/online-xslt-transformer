@@ -38,7 +38,7 @@ function App() {
         <section>
           <div>
             <h2>Data XML</h2>
-            <button onClick={() => setXsl(formatXml(xml))}>format</button>
+            <button onClick={() => setXml(formatXml(xml))}>format</button>
             <CopyButton copy={xml} />
           </div>
           <CodeMirror
@@ -53,7 +53,7 @@ function App() {
           <div>
             <h2>XSLT</h2>
             <button onClick={() => setXsl(formatXml(xsl))}>format</button>
-            <CopyButton copy={xml} />
+            <CopyButton copy={xsl} />
           </div>
           <CodeMirror
             width="100%"
